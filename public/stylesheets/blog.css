@@ -3,10 +3,12 @@
     display: flex;
 }
 
+
 .recent-blogs {
     width: 342px;
     margin-right: 32px;
 }
+
 
 .blog-content {
     flex: 1;
@@ -21,6 +23,10 @@
     color: #6941C6;
 }
 
+h3:hover {
+    opacity: 0.8;
+}
+
 .formated-date p {
     color: #6941C6 !important;
 }
@@ -30,7 +36,7 @@
 }
 
 .recent-blogs-content p {
-    color: #667085;
+    color: #1A1A1A;
 }
 
 .blog-title {
@@ -48,7 +54,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0;
-    color: #667085;
+    color: #1A1A1A;
     margin-top: 32px;
 }
 
@@ -69,6 +75,7 @@
 
 .recent-blogs-content h3 {
     margin-bottom: 12px;
+    transition: 0.2s all;
 }
 
 .description {

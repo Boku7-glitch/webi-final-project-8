@@ -22,6 +22,10 @@ body.dark-mode p {
     color: #d1d1d1;
 }
 
+body.dark-mode .blog-date {
+    color: #6941C6;
+}
+
 body.dark-mode a {
     color: #91cfff;
 }
@@ -36,7 +40,7 @@ body.dark-mode .secondary-blog-text {
 }
 
 body.dark-mode .author-date-label {
-    color: #aaaaaa;
+    color: #6941C6;
 }
 
 .dark-mode-toggle {
