@@ -4,16 +4,20 @@
             <%= email %>
         </p>
     </div>
+
     <div class="nav-wrapper">
         <nav class="main-nav">
             <ul class="nav-list-wrapper">
                 <li><a class="nav-link" href="/">Blog</a></li>
-                <li><a class="nav-link" href="/">About</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
                 <li><a class="nav-link" href="/">Newsletter</a></li>
                 <% if (email) { %>
-                <li><a class="nav-link" href="/blogs/new">Create New Blog</a></li>
-                <li><a style="color: #6e0000" class="nav-link" href="/logout">Logout</a></li>
+                    <li><a class="nav-link" href="/blogs/new">Create New Blog</a></li>
+                    <li><a style="color: #6e0000" class="nav-link" href="/logout">Logout</a></li>
                 <% } %>
+                <li>
+                    <button id="toggle-dark-mode-desktop" class="dark-mode-toggle">🌙</button>
+                </li>
             </ul>
         </nav>
 
@@ -29,8 +33,11 @@
         <a class="nav-link" href="/">Projects</a>
         <a class="nav-link" href="/">About</a>
         <a class="nav-link" href="/">Newsletter</a>
+
+        <button id="toggle-dark-mode-mobile" class="dark-mode-toggle">🌙</button>
+
         <figure class="close-btn-wrapper" id="close-btn-wrapper">
-            <img src="/images/close-icon.svg" alt="">
+            <img src="/images/close-icon.svg" alt="Close menu">
         </figure>
     </div>
 </header>
@@ -39,12 +46,34 @@
     const burger = document.getElementById('burger');
     const closeBtn = document.getElementById('close-btn-wrapper');
     const mobileMenu = document.getElementById('mobileMenu');
+    const toggleBtnDesktop = document.getElementById('toggle-dark-mode-desktop');
+    const toggleBtnMobile = document.getElementById('toggle-dark-mode-mobile');
+
+    const setThemeIcon = (isDark) => {
+        if (toggleBtnDesktop) toggleBtnDesktop.textContent = isDark ? '☀️' : '🌙';
+        if (toggleBtnMobile) toggleBtnMobile.textContent = isDark ? '☀️' : '🌙';
+    };
+
+    const toggleDarkMode = () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        setThemeIcon(isDark);
+    };
 
     burger.addEventListener('click', () => {
         mobileMenu.classList.toggle('show');
     });
 
     closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('show');
+        mobileMenu.classList.remove('show');
     });
+
+    // Load saved theme
+    const isDark = localStorage.getItem('theme') === 'dark';
+    if (isDark) document.body.classList.add('dark-mode');
+    setThemeIcon(isDark);
+
+    // Add event listeners
+    if (toggleBtnDesktop) toggleBtnDesktop.addEventListener('click', toggleDarkMode);
+    if (toggleBtnMobile) toggleBtnMobile.addEventListener('click', toggleDarkMode);
 </script>

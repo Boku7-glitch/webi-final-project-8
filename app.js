@@ -35,8 +35,14 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
-app.use('/blogs', blogsRouter)
-app.use('/logout', logoutRouter)
+app.use('/blogs', blogsRouter);
+app.use('/logout', logoutRouter);
+
+app.get('/about', (req, res) => {
+  const email = req.session.user ? req.session.user.email : null;
+  res.render('about', { email: email });
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

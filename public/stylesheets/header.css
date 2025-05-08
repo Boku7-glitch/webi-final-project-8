@@ -1,3 +1,86 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f5f5f5;
+}
+
+body.dark-mode p {
+    color: #d1d1d1;
+}
+
+body.dark-mode a {
+    color: #91cfff;
+}
+
+body.dark-mode a:hover {
+    color: #64b5f6;
+}
+
+body.dark-mode .main-blog-text,
+body.dark-mode .secondary-blog-text {
+    color: #cccccc;
+}
+
+body.dark-mode .author-date-label {
+    color: #aaaaaa;
+}
+
+.dark-mode-toggle {
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Inter', sans-serif;
+    width: auto;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+#mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 999;
+    transition: background 0.3s;
+}
+
+#mode-toggle:hover {
+    background-color: #555;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +105,7 @@ header {
     position: relative;
 }
 
-.nav-list-wrapper{
+.nav-list-wrapper {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -54,6 +137,10 @@ header {
     border-radius: 2px;
 }
 
+body.dark-mode .burger span {
+    background-color: #f5f5f5;
+}
+
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -73,6 +160,12 @@ header {
 
 .mobile-menu.show {
     transform: translateY(0);
+}
+
+.mobile-menu .toggle-btn {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .mobile-menu a {
@@ -96,5 +189,13 @@ header {
 
     .burger {
         display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .dark-mode-toggle {
+        font-size: 14px;
+        padding: 8px 14px;
+        max-width: 140px;
     }
 }

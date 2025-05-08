@@ -28,13 +28,13 @@
                         <figure>
                             <img class="" src="/images/thumbnails/normal/<%= index %>.png" alt="thumbnail">
                         </figure>
-                        <div>
+                        <div class="formated-date">
                             <p class=""><%= blog.author %> • <%= blog.formatedDate %></p>
                         </div>
                         <a href="/blogs/<%= blog.id %>">
                             <h3 class=""><%= blog.title.slice(0, 20) %> </h3>
                         </a>
-                        <p class=""><%= blog.description.slice(0, 90) %> </p>
+                        <p class="description"><%= blog.description.slice(0, 90) %> </p>
                     </div>
                 <% }) %>
             </div>
