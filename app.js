@@ -11,6 +11,8 @@ const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 const blogsRouter= require('./routes/blogs');
 const logoutRouter= require('./routes/logout');
+const aboutRouter= require('./routes/about');
+const newsletterRouter= require('./routes/newsletter');
 
 const app = express();
 
@@ -37,11 +39,8 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/blogs', blogsRouter);
 app.use('/logout', logoutRouter);
-
-app.get('/about', (req, res) => {
-  const email = req.session.user ? req.session.user.email : null;
-  res.render('about', { email: email });
-});
+app.use('/about', aboutRouter);
+app.use('/newsletter', newsletterRouter);
 
 
 // catch 404 and forward to error handler

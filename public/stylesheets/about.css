@@ -14,25 +14,15 @@
     line-height: normal;
     border-top: 1px solid rgba(0, 0, 0, 0.34);
     border-bottom: 1px solid rgba(0, 0, 0, 0.34);
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 body.dark-mode .title {
     border-top: 1px solid rgba(255, 255, 255, 0.55);
     border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-}
-
-@media (max-width: 768px) {
-    .title {
-        font-size: 100px;
-    }
-}
-
-.image-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 345px;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .about-image {
@@ -49,7 +39,11 @@ body.dark-mode .title {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.container {
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
@@ -97,62 +91,66 @@ h3 {
     margin-bottom: 12px;
 }
 
-@media (max-width: 1024px) {
-    h2.title {
-        font-size: 30px;
+@media (max-width: 1440px) {
+    .main-container {
+        width: 1000px;
     }
-
-    h3 {
-        font-size: 22px;
-    }
-
     .about-image {
-        width: 180px;
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        width: auto;
+        padding-inline: 50px;
+    }
+    .about-image {
+        width: 900px;
+    }
+}
+
+@media (max-width: 985px) {
+    .about-image {
+        width: 850px;
+    }
+}
+
+@media (max-width: 945px) {
+    .about-image {
+        width: 825px;
+    }
+}
+
+@media (max-width: 920px) {
+    .about-image {
+        width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-image {
+        width: 750px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-image {
+        width: 710px;
+    }
+}
+
+@media (max-width: 810px) {
+    .about-image {
+        width: 670px;
     }
 }
 
 @media (max-width: 768px) {
-    .about-container,
-    .image-wrapper {
-        padding: 0 12px;
+    .main-container {
+        padding-inline: 25px;
     }
-
-    h2.title {
-        font-size: 26px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    .about-me p, .lists li {
-        font-size: 15px;
-    }
-
     .about-image {
-        width: 150px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    h2.title {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .about-me p, .lists li {
-        font-size: 14px;
-    }
-
-    .about-image {
-        width: 130px;
-    }
-
-    .lists {
-        padding-left: 16px;
+        width: 100%;
     }
 }

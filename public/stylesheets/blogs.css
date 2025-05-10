@@ -336,3 +336,15 @@ a:hover {
     /*    object-fit: cover;*/
     /*}*/
 }
+
+.recent-blog-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    transition: 0.2s all;
+}
+
+.recent-blog-title-wrapper:hover {
+    opacity: 0.8;
+}

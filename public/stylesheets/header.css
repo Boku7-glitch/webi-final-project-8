@@ -62,8 +62,9 @@ body.dark-mode .author-date-label {
 }
 
 body.dark-mode .dark-mode-toggle {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
+    background-color: #e0e0e0;
+    color: #121212;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #mode-toggle {
