@@ -20,9 +20,11 @@
 
 <%- include('partials/header', {email: email}); %>
 
-<div class="blog-container">
-    <h2 class="title container">THE BLOG</h2>
-</div>
+<a href="/">
+    <div class="blog-container">
+        <h2 class="title container">THE BLOG</h2>
+    </div>
+</a>
 
 <section class="recent-blogs container">
     <h3 class="recent-blogs-title">Recent blog posts</h3>
@@ -97,9 +99,11 @@
         </div>
     </div>
     <div class="recent-blogs-content-below-card">
-        <figure class="recent-blogs-content-below-card-img-wrapper">
-            <img class="recent-blogs-content-below-card-img" src="/images/thumbnails/wide/2.png" alt="">
-        </figure>
+        <a href="/blogs/<%= blogs[3].id %>">
+            <figure class="recent-blogs-content-below-card-img-wrapper">
+                <img class="recent-blogs-content-below-card-img" src="/images/thumbnails/wide/2.png" alt="">
+            </figure>
+        </a>
         <div class="recent-blogs-content-below-card-content">
             <p style="margin-top: 0" class="author-date-label"><%= blogs[3].author %>
                 • <%= blogs[3].formatedDate %></p>
@@ -124,9 +128,11 @@
     <div class="all-blogs-grid">
         <% blogs.splice(0, 6).forEach((blog, index)=>{ %>
             <div class="all-blogs-card">
-                <figure>
-                    <img class="all-blogs-img" src="/images/thumbnails/normal/<%= index %>.png" alt="thumbnail">
-                </figure>
+                <a href="/blogs/<%= blog.id %>">
+                    <figure>
+                        <img class="all-blogs-img" src="/images/thumbnails/normal/<%= index %>.png" alt="thumbnail">
+                    </figure>
+                </a>
                 <div>
                     <p class="author-date-label"><%= blog.author %> • <%= blog.formatedDate %></p>
                 </div>

@@ -13,8 +13,13 @@ const blogsRouter= require('./routes/blogs');
 const logoutRouter= require('./routes/logout');
 const aboutRouter= require('./routes/about');
 const newsletterRouter= require('./routes/newsletter');
+const commentsRouter= require('./routes/comments');
+
+const {connectDatabase} = require("./database/database");
 
 const app = express();
+
+connectDatabase();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -41,6 +46,7 @@ app.use('/blogs', blogsRouter);
 app.use('/logout', logoutRouter);
 app.use('/about', aboutRouter);
 app.use('/newsletter', newsletterRouter);
+app.use('/comments', commentsRouter);
 
 
 // catch 404 and forward to error handler

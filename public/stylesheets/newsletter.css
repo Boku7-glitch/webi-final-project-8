@@ -27,7 +27,7 @@
 }
 
 .newsletter-description p {
-    color: #C0C5D0;
+    color: #1A1A1A;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -78,7 +78,7 @@
 }
 
 .policy p {
-    color: #C0C5D0;
+    color: #1A1A1A;
     list-style: none;
     font-size: 14px;
     margin-top: 8px;
@@ -86,6 +86,7 @@
 }
 
 .policy p a {
+    text-decoration: underline;
     cursor: pointer;
 }
 

@@ -1,8 +1,10 @@
 <header class="container">
     <div class="username">
-        <p>
-            <%= email %>
-        </p>
+        <a href="/">
+            <p>
+                <%= email ? email.split('@')[0] : null %>
+            </p>
+        </a>
     </div>
 
     <div class="nav-wrapper">

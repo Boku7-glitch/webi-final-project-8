@@ -17,42 +17,102 @@
     <link rel="shortcut icon" href="./images/blog-icon.svg" type="image/x-icon">
 </head>
 <body>
-    <%- include('partials/header', {email: email}); %>
+<%- include('partials/header', {email: email}); %>
 
-    <div class="container blog-wrapper">
-        <div class="recent-blogs">
-            <h2 class="recent-blogs-title">Recent blog posts</h2>
+<div class="container blog-wrapper">
+    <div class="recent-blogs">
+        <h2 class="recent-blogs-title">Recent blog posts</h2>
 
-            <div class="recent-blogs-content">
-                <% blogs.splice(0, 6).forEach((blog, index)=>{ %>
-                    <div class="">
+        <div class="recent-blogs-content">
+            <% blogs.splice(0, 6).forEach((blog, index)=>{ %>
+                <div class="">
+                    <a href="/blogs/<%= blog.id %>">
                         <figure>
                             <img class="main-img" src="/images/thumbnails/normal/<%= index %>.png" alt="thumbnail">
                         </figure>
-                        <div class="formated-date">
-                            <p class=""><%= blog.author %> • <%= blog.formatedDate %></p>
-                        </div>
-                        <a class="recent-blog-title-wrapper" href="/blogs/<%= blog.id %>">
-                            <h3 class=""><%= blog.title.slice(0, 20) %> </h3>
-
-                            <img src="/images/arrow-up-right-light.svg" alt="arrow-up-right-light">
-                        </a>
-                        <p class="description"><%= blog.description.slice(0, 90) %> </p>
+                    </a>
+                    <div class="formated-date">
+                        <p class=""><%= blog.author %> • <%= blog.formatedDate %></p>
                     </div>
-                <% }) %>
-            </div>
-        </div>
+                    <a class="recent-blog-title-wrapper" href="/blogs/<%= blog.id %>">
+                        <h3 class=""><%= blog.title.slice(0, 20) %> </h3>
 
-        <div class="blog-content">
-            <p class="blog-date"><%= blog.formatedDate %></p>
-
-            <h2 class="blog-title"><%= blog.title %></h2>
-
-            <p class="blog-text"><%= blog.content %></p>
+                        <img src="/images/arrow-up-right-light.svg" alt="arrow-up-right-light">
+                    </a>
+                    <p class="description"><%= blog.description.slice(0, 90) %> </p>
+                </div>
+            <% }) %>
         </div>
     </div>
 
-    <%- include('partials/footer') %>
+    <div class="blog-content">
+        <p class="blog-date"><%= blog.formatedDate %></p>
+
+        <h2 class="blog-title"><%= blog.title %></h2>
+
+        <p class="blog-text"><%= blog.content %></p>
+    </div>
+</div>
+
+<div class="comments-section">
+    <h3>💬 Comments</h3>
+
+    <form class="comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
+        <textarea name="text" placeholder="Write a comment..." required></textarea>
+        <button type="submit">Post</button>
+    </form>
+
+    <div class="comments-list">
+        <% (blog.comments || []).reverse().forEach(comment => { %>
+            <div class="comment-card">
+                <p class="comment-meta"><%= comment.author %> • <%= comment.formatedDate %></p>
+                <p class="comment-text"><%= comment.text %></p>
+                <div class="comment-actions">
+                    <button class="like-btn" data-comment-id="{{comment._id}}">❤️ <%= comment.likes || 0 %></button>
+                    <button class="reply-btn" data-comment-id="{{comment._id}}">↩ Reply</button>
+                </div>
+
+                <% if (comment.replies && comment.replies.length > 0) { %>
+                    <div class="replies">
+                        <% comment.replies.forEach(reply => { %>
+                            <div class="reply">
+                                <p><%= reply.author %> • <%= reply.date %></p>
+                                <p><%= reply.text %></p>
+                            </div>
+                        <% }) %>
+                    </div>
+                <% } %>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
+
+<script>
+    document.querySelectorAll('.like-btn').forEach(button => {
+        button.addEventListener('click', async () => {
+            const commentId = button.dataset.commentId;
+            const res = await fetch(`/comments/${commentId}/like`, { method: 'POST' });
+            const data = await res.json();
+            button.nextElementSibling.textContent = `${data.likes} Likes`;
+        });
+    });
+
+    document.querySelectorAll('.reply-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const commentId = button.dataset.commentId;
+            const replyInput = prompt("Enter your reply:");
+            if (replyInput) {
+                fetch(`/comments/${commentId}/reply`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: replyInput, author: 'Anonymous' })
+                }).then(() => location.reload());
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
