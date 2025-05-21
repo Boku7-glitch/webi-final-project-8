@@ -25,10 +25,11 @@
 
         <div class="recent-blogs-content">
             <% blogs.splice(0, 6).forEach((blog, index)=>{ %>
-                <div class="">
+                <div>
                     <a href="/blogs/<%= blog.id %>">
                         <figure>
-                            <img class="main-img" src="/images/thumbnails/normal/<%= index %>.png" alt="thumbnail">
+                            <img class="recent-blog-image" src="/images/thumbnails/normal/<%= index %>.png"
+                                 alt="thumbnail">
                         </figure>
                     </a>
                     <div class="formated-date">
@@ -40,6 +41,7 @@
                         <img src="/images/arrow-up-right-light.svg" alt="arrow-up-right-light">
                     </a>
                     <p class="description"><%= blog.description.slice(0, 90) %> </p>
+                    <p class="recent-blog-date"><%= blog.formatedDate %></p>
                 </div>
             <% }) %>
         </div>
@@ -51,68 +53,88 @@
         <h2 class="blog-title"><%= blog.title %></h2>
 
         <p class="blog-text"><%= blog.content %></p>
-    </div>
-</div>
 
-<div class="comments-section">
-    <h3>💬 Comments</h3>
-
-    <form class="comment-form" action="/blogs/<%= blog.id %>/comments" method="POST">
-        <textarea name="text" placeholder="Write a comment..." required></textarea>
-        <button type="submit">Post</button>
-    </form>
-
-    <div class="comments-list">
-        <% (blog.comments || []).reverse().forEach(comment => { %>
-            <div class="comment-card">
-                <p class="comment-meta"><%= comment.author %> • <%= comment.formatedDate %></p>
-                <p class="comment-text"><%= comment.text %></p>
-                <div class="comment-actions">
-                    <button class="like-btn" data-comment-id="{{comment._id}}">❤️ <%= comment.likes || 0 %></button>
-                    <button class="reply-btn" data-comment-id="{{comment._id}}">↩ Reply</button>
-                </div>
-
-                <% if (comment.replies && comment.replies.length > 0) { %>
-                    <div class="replies">
-                        <% comment.replies.forEach(reply => { %>
-                            <div class="reply">
-                                <p><%= reply.author %> • <%= reply.date %></p>
-                                <p><%= reply.text %></p>
+        <section class="blog-comments">
+            <div class="separator"></div>
+            <h3 class="blog-comments-title">Comments</h3>
+            <form action="/blogs/<%= blog.id %>/newComment" method="post">
+                <textarea placeholder="Comment..." class="comment-input" name="newComment" id="comment-input" cols="30"
+                          rows="auto"></textarea>
+                <button class="post-btn">Post Comment</button>
+            </form>
+            <% blog.comments.reverse().map((comment) => { %>
+                <div class="comment-wrapper">
+                    <div class="comment-header">
+                        <figure class="author-wrapper">
+                            <img class="comment-author-img"
+                                 src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+                                 alt="user-image">
+                            <div>
+                                <p class="author-username"> <%= comment.author.split('@')[0] %></p>
+                                <p class="comment-date"> <%= comment.date.toLocaleDateString('en-US', {
+                                        month: 'short',
+                                        day: 'numeric',
+                                        year: 'numeric'
+                                    }) %></p>
+                            </div>
+                        </figure>
+                        <figure class="like-wrapper">
+                            <form action="/blogs/<%= blog.id %>/comment/<%= comment.id %>/like" method="post">
+                                <button class="like-btn">
+                                    <% if( comment.likes.includes(email)) { %>
+                                        <img src="/images/like-icon-red.svg" alt="like-icon">
+                                    <% } else { %>
+                                        <img src="/images/like-icon.svg" alt="like-icon">
+                                    <% } %>
+                                </button>
+                            </form>
+                            <p class="like-count"> <%= comment.likes ? comment.likes.length : 0 %></p>
+                        </figure>
+                    </div>
+                    <p class="comment-content">
+                        <%= comment.content %>
+                    </p>
+                    <button class="reply-btn">
+                        Reply
+                    </button>
+                    <form method="post" action="/blogs/<%= blog.id %>/comment/<%= comment.id %>/reply"
+                          class="reply-input-wrapper">
+                        <textarea placeholder="Reply..." name="replyContent" id="reply-input"
+                                  class="reply-input"></textarea>
+                        <button class="post-btn">Post Reply</button>
+                    </form>
+                    <div class="replies-wrapper">
+                        <% comment.replies.reverse().forEach((reply) => { %>
+                            <div class="reply-wrapper">
+                                <figure class="author-wrapper">
+                                    <img class="comment-author-img"
+                                         id="reply-author-img"
+                                         src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+                                         alt="user-image">
+                                    <div>
+                                        <p id="reply-author-username"
+                                           class="author-username"> <%= reply.author.split('@')[0] %></p>
+                                        <p id="reply-date"
+                                           class="comment-date"> <%= reply.date.toLocaleDateString('en-US', {
+                                                month: 'short',
+                                                day: 'numeric',
+                                                year: 'numeric'
+                                            }) %></p>
+                                    </div>
+                                </figure>
+                                <p class="reply-content"><%= reply.content %></p>
                             </div>
                         <% }) %>
                     </div>
-                <% } %>
-            </div>
-        <% }) %>
+                </div>
+            <% }) %>
+        </section>
     </div>
 </div>
 
 <%- include('partials/footer') %>
 
-<script>
-    document.querySelectorAll('.like-btn').forEach(button => {
-        button.addEventListener('click', async () => {
-            const commentId = button.dataset.commentId;
-            const res = await fetch(`/comments/${commentId}/like`, { method: 'POST' });
-            const data = await res.json();
-            button.nextElementSibling.textContent = `${data.likes} Likes`;
-        });
-    });
-
-    document.querySelectorAll('.reply-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const commentId = button.dataset.commentId;
-            const replyInput = prompt("Enter your reply:");
-            if (replyInput) {
-                fetch(`/comments/${commentId}/reply`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ text: replyInput, author: 'Anonymous' })
-                }).then(() => location.reload());
-            }
-        });
-    });
-</script>
+<script src="/javascripts/replyinput.js"></script>
 
 </body>
 </html>

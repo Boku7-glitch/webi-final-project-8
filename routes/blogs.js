@@ -85,32 +85,95 @@ router.get('/:blogId', requireAuth, async function (req, res, next) {
     }
 });
 
-router.post('/:blogId/comments', requireAuth, async (req, res) => {
-    const { blogId } = req.params;
-    const { text } = req.body;
-    const email = req.session.user.email;
-
-    if (!text) return res.redirect(`/blogs/${blogId}`);
-
-    const comment = {
-        id: String(Date.now()),
-        author: email,
-        text,
-        date: new Date().toLocaleString(),
-        likes: 0,
-        replies: []
-    };
+router.post('/:blogId/newComment', requireAuth, async function (req, res, next) {
+    const {blogId} = req.params;
+    const {newComment} = req.body;
 
     try {
-        const blog = await Blog.findOne({ id: blogId });
-        blog.comments = blog.comments || [];
-        blog.comments.push(comment);
-        await blog.save();
-        res.redirect(`/blogs/${blogId}`);
+        const blog = await Blog.findOne({id: blogId});
+        if (!blog) {
+            throw new Error('Blog not found');
+        }
+
+        const comment = {
+            id: String(Date.now()),
+            content: newComment,
+            author: req.session.user.email,
+            replies: []
+        };
+
+        // Using $push operator to add the new comment to the comments array
+        await Blog.updateOne(
+            {id: blogId},
+            {$push: {comments: comment}}
+        );
+
     } catch (err) {
         console.log(err);
-        res.redirect(`/blogs/${blogId}`);
     }
+
+    res.redirect(`/blogs/${blogId}`);
+});
+
+router.post('/:blogId/comment/:commentId/like', requireAuth, async function (req, res, next) {
+    const {blogId, commentId} = req.params;
+    const email = req.session.user.email;
+
+    try {
+        // First, find the blog and check if the user has already liked the comment
+        const blog = await Blog.findOne(
+            {id: blogId, 'comments.id': commentId}
+        );
+
+        const comment = blog.comments.find(c => c.id === commentId);
+        const hasLiked = comment.likes && comment.likes.includes(email);
+
+        // If user has already liked, remove the like; otherwise add it
+        const updateOperation = hasLiked
+            ? { $pull: { 'comments.$.likes': email } }
+            : { $addToSet: { 'comments.$.likes': email } };
+
+        const result = await Blog.updateOne(
+            {id: blogId, 'comments.id': commentId},
+            updateOperation
+        );
+        console.log(result);
+    } catch (err) {
+        console.log(err);
+    }
+
+    res.redirect(`/blogs/${blogId}`);
+});
+
+router.post('/:blogId/comment/:commentId/reply', requireAuth, async function (req, res, next) {
+    const {blogId, commentId} = req.params;
+    const {replyContent} = req.body;
+
+    try {
+        const reply = {
+            content: replyContent,
+            author: req.session.user.email
+        };
+
+        // Using $push to add the reply to the specific comment's replies array
+        const res = await Blog.updateOne(
+            {
+                'id': blogId,
+                'comments.id': commentId
+            },
+            {
+                $push: {
+                    'comments.$.replies': reply
+                }
+            }
+        );
+
+        console.log(res);
+    } catch (err) {
+        console.log(err);
+    }
+
+    res.redirect(`/blogs/${blogId}`);
 });
 
 module.exports = router;
