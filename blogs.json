@@ -1,110 +1,236 @@
 [
   {
-    "id": "1746544416059",
-    "title": "6 May 2025",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a faucibus ligula. Proin molestie nunc vitae cursus porttitor. Vestibulum at enim vulputate sem tempus ultrices ut eget ex. Nulla lacinia sapien vel ipsum faucibus, sit amet dictum purus tempor. Sed venenatis semper ullamcorper. Integer et pretium leo. Quisque scelerisque odio a ante congue, ac convallis lacus dignissim. Praesent volutpat euismod volutpat. Sed finibus odio metus, id ultrices dui ornare quis. Curabitur mattis velit ut pellentesque tempor.",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a faucibus ligula. Proin molestie nunc vitae cursus porttitor. Vestibulum at enim vulputate sem tempus ultrices ut eget ex. Nulla lacinia sapien vel ipsum faucibus, sit amet dictum purus tempor. Sed venenatis semper ullamcorper. Integer et pretium leo. Quisque scelerisque odio a ante congue, ac convallis lacus dignissim. Praesent volutpat euismod volutpat. Sed finibus odio metus, id ultrices dui ornare quis. Curabitur mattis velit ut pellentesque tempor.\r\n\r\n",
+    "_id": {
+      "$oid": "68222ab14f4c0a9e6667ef29"
+    },
+    "__v": 0,
     "author": "nugonatroshvili@gmail.com",
-    "date": "5/6/2025, 7:13:36 PM",
-    "formatedDate": "6 May 2025"
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit quam nec eleifend tincidunt. Quisque turpis risus, mattis lobortis pulvinar id, sodales nec libero. Morbi ac ante quis ipsum semper aliquet. Ut imperdiet a nisl sit amet sagittis. Sed eu eros hendrerit, porta dolor eu, viverra lacus. Nunc fermentum pretium nulla non imperdiet. Maecenas auctor lorem at risus mattis, non sodales magna auctor. Aliquam consequat velit in lorem egestas, non bibendum magna semper.  Curabitur finibus diam nisl, in faucibus mi egestas eu. Donec lacus tortor, facilisis at faucibus sed, eleifend id arcu. Nullam nec volutpat risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at neque rhoncus nibh tincidunt dignissim. Duis ac mattis purus, vel mollis tellus. Nulla sit amet nibh nec sapien condimentum pharetra. Ut metus purus, dictum id est ac, venenatis egestas tellus. Vivamus laoreet bibendum venenatis. Maecenas efficitur risus et sem malesuada ornare. Mauris ultrices, nulla eu feugiat cursus, augue neque sodales ligula, ac mattis libero enim eget sem. Integer porta at libero ac viverra. Maecenas ut ex sit amet odio auctor dictum. Nunc iaculis enim et consectetur consectetur. Aliquam id sagittis risus, a pellentesque est. Vivamus lacinia massa non sem convallis ullamcorper.  In hac habitasse platea dictumst. Nulla sed nisl urna. Donec neque orci, viverra at sagittis at, maximus sed lacus. Aenean rutrum ornare ante ut vestibulum. In elit velit, scelerisque et scelerisque suscipit, molestie sed quam. Phasellus fermentum fermentum aliquam. Nunc eu ullamcorper ipsum, et ultrices urna. Integer congue dui sit amet leo cursus molestie. Praesent non tincidunt dolor. Aliquam ornare nunc purus, ut auctor justo vehicula mattis. Praesent lacinia cursus nisi, a euismod mauris eleifend et.  Nulla a eros mauris. Mauris vitae erat lectus. Praesent laoreet neque odio, sagittis fermentum massa rutrum in. Integer a purus quis lectus laoreet laoreet. Phasellus eget arcu venenatis, porta sem pharetra, malesuada velit. Sed at metus egestas, efficitur urna vitae, porttitor nisi. Etiam fringilla in ipsum et gravida. Nulla id vehicula diam, at dapibus tellus. Mauris tristique neque sed vulputate gravida. Aliquam erat volutpat. Praesent risus magna, rutrum a eleifend non, egestas non enim. Ut hendrerit at libero ac luctus.  Mauris sit amet nisi maximus mauris interdum faucibus. Ut id eros augue. Aenean tempor, felis a vestibulum dignissim, mi dui iaculis erat, in pulvinar eros massa sit amet tortor. Praesent facilisis quam lectus, id euismod massa fringilla non. In hac habitasse platea dictumst. Suspendisse nisi turpis, volutpat a ex id, pulvinar mattis elit. In pharetra, neque in luctus consectetur, urna arcu blandit quam, eu rutrum justo nibh non nibh. Phasellus ac lacinia elit. Vestibulum at ex eros. Integer ac ex laoreet turpis euismod mattis nec id sapien. Nunc volutpat auctor ipsum at viverra. Phasellus sollicitudin eu urna et maximus. Nullam gravida eu purus eu semper.",
+    "date": "5/12/2025, 9:06:57 PM",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit quam nec eleifend tincidunt. Quisque turpis risus, mattis lobortis pulvinar id, sodales nec libero. Morbi ac ante quis ipsum semper aliquet. Ut imperdiet a nisl sit amet sagittis. Sed eu eros hendrerit, porta dolor eu, viverra lacus. Nunc fermentum pretium nulla non imperdiet. Maecenas auctor lorem at risus mattis, non sodales magna auctor. Aliquam consequat velit in lorem egestas, non bibendum magna semper.  Curabitur finibus diam nisl, in faucibus mi egestas eu. Donec lacus tortor, facilisis at faucibus sed, eleifend id arcu. Nullam nec volutpat risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at neque rhoncus nibh tincidunt dignissim. Duis ac mattis purus, vel mollis tellus. Nulla sit amet nibh nec sapien condimentum pharetra. Ut metus purus, dictum id est ac, venenatis egestas tellus. Vivamus laoreet bibendum venenatis. Maecenas efficitur risus et sem malesuada ornare. Mauris ultrices, nulla eu feugiat cursus, augue neque sodales ligula, ac mattis libero enim eget sem. Integer porta at libero ac viverra. Maecenas ut ex sit amet odio auctor dictum. Nunc iaculis enim et consectetur consectetur. Aliquam id sagittis risus, a pellentesque est. Vivamus lacinia massa non sem convallis ullamcorper.  In hac habitasse platea dictumst. Nulla sed nisl urna. Donec neque orci, viverra at sagittis at, maximus sed lacus. Aenean rutrum ornare ante ut vestibulum. In elit velit, scelerisque et scelerisque suscipit, molestie sed quam. Phasellus fermentum fermentum aliquam. Nunc eu ullamcorper ipsum, et ultrices urna. Integer congue dui sit amet leo cursus molestie. Praesent non tincidunt dolor. Aliquam ornare nunc purus, ut auctor justo vehicula mattis. Praesent lacinia cursus nisi, a euismod mauris eleifend et.  Nulla a eros mauris. Mauris vitae erat lectus. Praesent laoreet neque odio, sagittis fermentum massa rutrum in. Integer a purus quis lectus laoreet laoreet. Phasellus eget arcu venenatis, porta sem pharetra, malesuada velit. Sed at metus egestas, efficitur urna vitae, porttitor nisi. Etiam fringilla in ipsum et gravida. Nulla id vehicula diam, at dapibus tellus. Mauris tristique neque sed vulputate gravida. Aliquam erat volutpat. Praesent risus magna, rutrum a eleifend non, egestas non enim. Ut hendrerit at libero ac luctus.  Mauris sit amet nisi maximus mauris interdum faucibus. Ut id eros augue. Aenean tempor, felis a vestibulum dignissim, mi dui iaculis erat, in pulvinar eros massa sit amet tortor. Praesent facilisis quam lectus, id euismod massa fringilla non. In hac habitasse platea dictumst. Suspendisse nisi turpis, volutpat a ex id, pulvinar mattis elit. In pharetra, neque in luctus consectetur, urna arcu blandit quam, eu rutrum justo nibh non nibh. Phasellus ac lacinia elit. Vestibulum at ex eros. Integer ac ex laoreet turpis euismod mattis nec id sapien. Nunc volutpat auctor ipsum at viverra. Phasellus sollicitudin eu urna et maximus. Nullam gravida eu purus eu semper.",
+    "formatedDate": "12 May 2025",
+    "id": "1747069617117",
+    "title": "Ukraine"
   },
   {
-    "id": "1746115636043",
-    "title": "Aliquam lobortis bibendum mi sit amet tempor. Sed maximus sed turpis id pharetra. Quisque ultrices dui sit amet quam viverra sagittis. Nullam commodo fringilla aliquam. Donec ut egestas magna, sit amet interdum orci. Integer interdum urna turpis, et efficitur magna sagittis at. Nullam luctus non mi a scelerisque. Curabitur vitae ultrices nisl. Nam consectetur iaculis nisi. In non dignissim est, sed consectetur quam. Aliquam porta faucibus rutrum. Suspendisse venenatis, lorem eu vestibulum hendrerit, arcu magna venenatis est, accumsan maximus lacus nulla nec turpis. Etiam facilisis scelerisque blandit. Donec tempor",
-    "description": "Aliquam lobortis bibendum mi sit amet tempor. Sed maximus sed turpis id pharetra. Quisque ultrices dui sit amet quam viverra sagittis. Nullam commodo fringilla aliquam. Donec ut egestas magna, sit amet interdum orci. Integer interdum urna turpis, et efficitur magna sagittis at. Nullam luctus non mi a scelerisque. Curabitur vitae ultrices nisl. Nam consectetur iaculis nisi. In non dignissim est, sed consectetur quam. Aliquam porta faucibus rutrum. Suspendisse venenatis, lorem eu vestibulum hendrerit, arcu magna venenatis est, accumsan maximus lacus nulla nec turpis. Etiam facilisis scelerisque blandit. Donec tempor",
-    "content": "Aliquam lobortis bibendum mi sit amet tempor. Sed maximus sed turpis id pharetra. Quisque ultrices dui sit amet quam viverra sagittis. Nullam commodo fringilla aliquam. Donec ut egestas magna, sit amet interdum orci. Integer interdum urna turpis, et efficitur magna sagittis at. Nullam luctus non mi a scelerisque. Curabitur vitae ultrices nisl. Nam consectetur iaculis nisi. In non dignissim est, sed consectetur quam. Aliquam porta faucibus rutrum. Suspendisse venenatis, lorem eu vestibulum hendrerit, arcu magna venenatis est, accumsan maximus lacus nulla nec turpis. Etiam facilisis scelerisque blandit. Donec tempor",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:07:16 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "68222bfe4f4c0a9e6667ef46"
+    },
+    "__v": 0,
+    "author": "nugonatroshvili@gmail.com",
+    "content": "As of May 9, 2025, the United Kingdom has recorded the highest area of land affected by wildfires since records began in 2012. Over 161 significant fires have been reported, surpassing previous records and raising concerns about climate change and land management practices.",
+    "date": "5/12/2025, 9:12:30 PM",
+    "description": "The UK experiences its worst wildfire season on record, with over 161 major fires reported.",
+    "formatedDate": "12 May 2025",
+    "id": "1747069950804",
+    "title": "Record-Breaking Wildfires Sweep Across the UK"
   },
   {
-    "id": "1746115563322",
-    "title": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "description": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "content": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:06:03 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "68222c164f4c0a9e6667ef49"
+    },
+    "__v": 0,
+    "author": "nugonatroshvili@gmail.com",
+    "content": "India's Armed Forces continue Operation Sindoor in response to ceasefire violations along the Line of Control. Prime Minister Narendra Modi is scheduled to address the nation at 8 PM to discuss the ongoing situation and India's strategic stance.",
+    "date": "5/12/2025, 9:12:54 PM",
+    "description": "India's military operation near the LoC intensifies, prompting a national address by PM Modi.",
+    "formatedDate": "12 May 2025",
+    "id": "1747069974226",
+    "title": "India-Pakistan Tensions Escalate Amid Operation Sindoor",
+    "comments": [
+      {
+        "id": "1747744061370",
+        "content": "",
+        "author": "natroshvili@gmail.com",
+        "replies": [],
+        "likes": [],
+        "_id": {
+          "$oid": "682c753daa4dfd761c97cf27"
+        },
+        "date": {
+          "$date": "2025-05-20T12:27:41.371Z"
+        }
+      }
+    ]
   },
   {
-    "id": "1746115540311",
-    "title": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "description": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "content": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:05:40 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "68222c244f4c0a9e6667ef4e"
+    },
+    "__v": 0,
+    "author": "nugonatroshvili@gmail.com",
+    "content": "Mortgage and refinance rates have seen an upward trend, with the average 30-year fixed mortgage rate increasing. Despite higher rates, home sales are on the rise, indicating a robust housing market.",
+    "date": "5/12/2025, 9:13:08 PM",
+    "description": "Average 30-year and 15-year mortgage rates rise, coinciding with an uptick in home sales.",
+    "formatedDate": "12 May 2025",
+    "id": "1747069988603",
+    "title": "Mortgage Rates Climb as Home Sales Surge"
   },
   {
-    "id": "1746115419800",
-    "title": "asellus et luctus ",
-    "description": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "content": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:03:39 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "68222d2f4f4c0a9e6667ef56"
+    },
+    "__v": 0,
+    "author": "nugonatroshvili@gmail.com",
+    "content": "ვაგრძელებთ მოთმინებით ყურებას, თუ როგორ ხელმძღვანელობს ჩიომა ნნადი British Vogue-ის სარედაქციო კონტენტს კიდევ ერთი თვის განმავლობაში. იმის თქმა, რომ იმედგაცრუებულები ვართ ნნადის მიერ ბრიტანული მოდის ბიბლიის ხელმძღვანელობით, არაფრის მთქმელი იქნება. A-კლასის ვარსკვლავების მონაწილეობით გარეკანები (მათ შორის, ზენდაიადან სოფი ტერნერამდე და კაილი ჯენერიდან ტაილამდე) ჩავარდა. British Vogue-ის მაისის ნომრის გარეკანზე შემდეგი ბილი აილიშია. ედვარდ ენინფულიდან ოთხი წლის შემდეგ, რაც ამერიკელ მუსიკოსს Vogue-ის გარდასახვა მოუწყო, ბილი ჟურნალის გარეკანზე ბრუნდება და ჯონი დიუფორის წინაშე ორმაგი გარეკანისთვის პოზირებს. კალიფორნიის უდაბნოში გადაღებული გრემის ჯილდოს მფლობელი არტისტი ტეილორ მაკნილმა სტილისტურად შეარჩია. ბილი ჯონი დიუფორის მიერ გადაღებულ ორ გარეკანზე Willy Chavarria-ს, Chanel-ის, Martine Rose-ის, A Bathing Ape-ის და Erl-ის მიქსს ატარებს.\r\n\r\n",
+    "date": "5/12/2025, 9:17:35 PM",
+    "description": "ვაგრძელებთ მოთმინებით ყურებას, თუ როგორ ხელმძღვანელობს ჩიომა ნნადი British Vogue-ის სარედაქციო კონტენტს კიდევ ერთი თვის განმავლობაში. იმის თქმა, რომ იმედგაცრუებულები ვართ ნნადის მიერ ბრიტანული მოდის ბიბლიის ხელმძღვანელობით, არაფრის მთქმელი იქნება. A-კლასის ვარსკვლავების მონაწილეობით გარეკანები (მათ შორის, ზენდაიადან სოფი ტერნერამდე და კაილი ჯენერიდან ტაილამდე) ჩავარდა. British Vogue-ის მაისის ნომრის გარეკანზე შემდეგი ბილი აილიშია. ედვარდ ენინფულიდან ოთხი წლის შემდეგ, რაც ამერიკელ მუსიკოსს Vogue-ის გარდასახვა მოუწყო, ბილი ჟურნალის გარეკანზე ბრუნდება და ჯონი დიუფორის წინაშე ორმაგი გარეკანისთვის პოზირებს. კალიფორნიის უდაბნოში გადაღებული გრემის ჯილდოს მფლობელი არტისტი ტეილორ მაკნილმა სტილისტურად შეარჩია. ბილი ჯონი დიუფორის მიერ გადაღებულ ორ გარეკანზე Willy Chavarria-ს, Chanel-ის, Martine Rose-ის, A Bathing Ape-ის და Erl-ის მიქსს ატარებს.",
+    "formatedDate": "12 May 2025",
+    "id": "1747070255316",
+    "title": "ბილი აილიში ბრუნდება British Vogue-ის გარეკანზე 2025 წლის მაისის \"საშინელ\" გარეკანებზე პოზირებით",
+    "comments": [
+      {
+        "id": "1747762936681",
+        "content": "ბილი აილიში ბრუნდება British Vogue-ის გარეკანზე 2025 წლის მაისის \"საშინელ\" გარეკანებზე პოზირებით\r\n",
+        "author": "natroshvili@gmail.com",
+        "replies": [
+          {
+            "content": "HELL NAH",
+            "author": "helloworld@gmail.com",
+            "date": {
+              "$date": "2025-05-21T16:50:47.812Z"
+            },
+            "_id": {
+              "$oid": "682e046790f38c634865f48f"
+            }
+          }
+        ],
+        "likes": [
+          "natroshvili@gmail.com"
+        ],
+        "_id": {
+          "$oid": "682cbef87b968eaa80634338"
+        },
+        "date": {
+          "$date": "2025-05-20T17:42:16.682Z"
+        }
+      }
+    ]
   },
   {
-    "id": "1746115262535",
-    "title": "et interdum ",
-    "description": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "content": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:01:02 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "68222e574f4c0a9e6667ef66"
+    },
+    "__v": 0,
+    "author": "nugonatroshvili@gmail.com",
+    "content": "Genesis წარმოადგენს X Gran Equator კონცეპტუალურ SUV-ს, რომელსაც დაფაზე ოთხი წრიული დისპლეი აქვს განთავსებული, შთაგონებული ძველი კამერების ციფერბლატებით. ეს არის მხოლოდ ნაწილი იმ თანამედროვე მახასიათებლებისა, რომელსაც კონცეპტუალური ავტომობილი შესაძლო მფლობელებს სთავაზობს. ინტერიერში, დიზაინერულმა გუნდმა სახურავზე ტრადიციული ერთიანი პანელის ნაცვლად, ოთხი კვადრატული ლუქი გამოკვეთა. ამგვარად, მძღოლი და თითოეული მგზავრი ხედავს გარემოს იქიდან, სადაც სხედან. სალონის ფერებიც კონტრასტულია, ბეჟი და ლურჯი აქცენტებით, დედამიწისა და მდიდარი ტონების შეხამება ფერთა გამისთვის.\r\n\r\nდაფა შეიძლება ყურადღების ცენტრში მოექცეს, რადგან Genesis X Gran Equator-ის კონცეფციისთვის ციფრული ტექნოლოგიებიდან შორს მიდის. ცენტრში განლაგებული ოთხი წრიული მრიცხველის დისპლეის გარდა, მძღოლის დისპლეიც ამ ტიპის ეკრანს იყენებს. დაფისთვის გაფართოებული ეკრანის არარსებობა მუქი ლურჯი ფერის ზედაპირს ბრწყინვალების საშუალებას აძლევს, აშორებს რა ზედმეტ ინფორმაციულ გადატვირთვას და აცოცხლებს მექანიკური ინსტრუმენტული პანელების ეპოქას. წინა სავარძლებიც ბრუნავს, რაც აადვილებს წინა მხარის მომხმარებლებისთვის კონცეპტუალურ ავტომობილში შესვლასა და გამოსვლას.\r\n\r\nორი ხაზის საფირმო ფარები, რომლებიც გვერდზე გრძელდება\r\nGenesis X Gran Equator კონცეპტუალურ SUV-ში მოდულური სათავსოა განთავსებული. მომხმარებლებს შეუძლიათ შეცვალონ და განათავსონ კარადები და კონტეინერები სალონის გარკვეულ პოზიციებზე, თუ სურთ მეტი განყოფილების დამატება თავიანთი ნივთების შესანახად. ავტომობილის ექსტერიერში, ავტომობილების მწარმოებელი იყენებს იმას, რასაც „რედუქციული დიზაინის პრინციპებს“ უწოდებს. სუფთა ხაზები ხაზს უსვამს SUV-ის სტრუქტურას Genesis-ის ორი ხაზის საფირმო ფარებით. შემდეგ, გრძელი კაპოტი და C-სვეტები ქმნის მის სილუეტს.\r\n\r\nგეომეტრიული დამხმარე ფარები და ორად გაღებული საბარგულის კარი ავსებს ხაზოვან ფარებს, რომლებიც Genesis X Gran Equator-ის კონცეფციის გვერდზე გრძელდება. უკანა ფარებიც კი ორ გრძელ ზოლად არის წარმოდგენილი. წინა მხარეს ავტომობილს შერბილებული წინა ნაწილი აქვს. ეს იმიტომ, რომ ფარები და ვენტილაციები ქვედა ნაწილშია განთავსებული, რაც გზას უხსნის ფარების შეუწყვეტელ ხაზებს. Genesis X Gran Equator კონცეფციას 2025 წლის ნიუ-იორკის საერთაშორისო ავტოშოუზე, 2025 წლის 18 აპრილიდან, ჯეიკობ კ. ჯავიტსის საკონვენციო ცენტრში წარადგენს. შოუს შემდეგ, SUV გადაინაცვლებს Genesis House New York-ში, Meatpacking District-ში, 2025 წლის ივლისის ბოლომდე.\r\n\r\nწინა მხარეს ავტომობილს შერბილებული წინა ნაწილი აქვს, რადგან ფარები და ვენტილაციები ქვედა ნაწილშია განთავსებული\r\n\r\nუკანა ფარებიც კი ორ გრძელ ზოლად არის წარმოდგენილი\r\n\r\nდაფაზე ოთხი წრიული დისპლეია განთავსებული, შთაგონებული ძველი კამერების ციფერბლატებით\r\n\r\nდიზაინერულმა გუნდმა სახურავზე ტრადიციული ერთიანი პანელის ნაცვლად, ოთხი კვადრატული ლუქი გამოკვეთა\r\n\r\nსალონის ფერებიც კონტრასტულია, ბეჟი და ლურჯი აქცენტებით, შეხამებულია ერთად\r\n\r\nპროექტის შესახებ ინფორმაცია:\r\n\r\nსახელი: X Gran Equator კონცეფცია\r\n\r\nავტომობილების მწარმოებელი: Genesis Motor | @genesis_worldwide\r\n\r\nდამუშავებულია ასინეთა AI-ის მიერ.\r\n\r\n\r\n\r\n",
+    "date": "5/12/2025, 9:22:31 PM",
+    "description": "Genesis წარმოადგენს X Gran Equator კონცეპტუალურ SUV-ს, რომელსაც დაფაზე ოთხი წრიული დისპლეი აქვს განთავსებული, შთაგონებული ძველი კამერების ციფერბლატებით. ეს არის მხოლოდ ნაწილი იმ თანამედროვე მახასიათებლებისა, რომელსაც კონცეპტუალური ავტომობილი შესაძლო მფლობელებს სთავაზობს. ინტერიერში, დიზაინერულმა გუნდმა სახურავზე ტრადიციული ერთიანი პანელის ნაცვლად, ოთხი კვადრატული ლუქი გამოკვეთა. ამგვარად, მძღოლი და თითოეული მგზავრი ხედავს გარემოს იქიდან, სადაც სხედან. სალონის ფერებიც კონტრასტულია, ბეჟი და ლურჯი აქცენტებით, დედამიწისა და მდიდარი ტონების შეხამება ფერთა გამისთვის.",
+    "formatedDate": "12 May 2025",
+    "id": "1747070551035",
+    "title": "Genesis X Gran Equator SUV-ის კონცეფცია: დაფაზე განლაგებული წრიული მაჩვენებლები, შთაგონებული ძველი კამერებით",
+    "comments": [
+      {
+        "id": "1747843551003",
+        "content": "fdsf",
+        "author": "helloworld@gmail.com",
+        "replies": [],
+        "likes": [],
+        "_id": {
+          "$oid": "682df9df3bc4b52e081cf42f"
+        },
+        "date": {
+          "$date": "2025-05-21T16:05:51.017Z"
+        }
+      }
+    ]
   },
   {
-    "id": "1746115540311",
-    "title": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "description": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "content": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:05:40 PM",
-    "formatedDate": "1 May 2025"
-  },
-  {
-    "id": "1746115419800",
-    "title": "asellus et luctus ",
-    "description": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "content": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:03:39 PM",
-    "formatedDate": "1 May 2025"
-  },
-  {
-    "id": "1746115262535",
-    "title": "et interdum ",
-    "description": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "content": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:01:02 PM",
-    "formatedDate": "1 May 2025"
-  },
-  {
-    "id": "1746115540311",
-    "title": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "description": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "content": "Curabitur tortor ex, consequat quis suscipit quis, malesuada eget nisl. Cras pulvinar ligula sapien, id commodo ex placerat non. Integer vestibulum nec lacus vitae eleifend. Vivamus lectus arcu, lacinia at semper id, tincidunt eu quam. Phasellus vehicula sodales arcu, ac eleifend nisl scelerisque ornare. Quisque ac elit pellentesque, ultrices metus sit amet, posuere neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo augue, gravida ac efficitur quis, egestas id erat. Nullam vitae dignissim metus. Aliquam commodo, mauris quis volutpat faucibus, lorem mi porta tortor, quis convallis diam velit mattis nunc. Mauris tempus lobortis lectus sed cursus.",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:05:40 PM",
-    "formatedDate": "1 May 2025"
-  },
-  {
-    "id": "1746115419800",
-    "title": "asellus et luctus ",
-    "description": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "content": "asellus et luctus justo. Etiam quis sapien ut tellus mattis volutpat eget condimentum erat. Suspendisse in lobortis felis. Ut ac iaculis arcu. Maecenas vel egestas orci, et ullamcorp",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:03:39 PM",
-    "formatedDate": "1 May 2025"
-  },
-  {
-    "id": "1746115262535",
-    "title": "et interdum ",
-    "description": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "content": "et interdum felis. Sed quis ultricies diam, vel pellentesq",
-    "author": "melo@gmail.com",
-    "date": "5/1/2025, 8:01:02 PM",
-    "formatedDate": "1 May 2025"
+    "_id": {
+      "$oid": "682611877219d907cca2f8c3"
+    },
+    "__v": 1,
+    "author": "carmelo@gmail.com",
+    "content": "2024, it decided to make a song and dance about it, creating frequent flyer “millionaires” in the process.\r\n\r\nFor 27 years, the airline had been part of the Star Alliance, an umbrella collection of 25 global carriers including stalwarts of the sky like United, Singapore Airlines and Ethiopian.",
+    "date": "5/15/2025, 8:08:39 PM",
+    "description": "2024, it decided to make a song and dance about it, creating frequent flyer “millionaires” in the process.  For 27 years, the airline had been part of the Star Alliance, an umbrella collection of 25 global carriers including stalwarts of the sky like United, Singapore Airlines and Ethiopian.",
+    "formatedDate": "15 May 2025",
+    "id": "1747325319094",
+    "title": "Who knew becoming a millionaire was so easy?",
+    "comments": [
+      {
+        "id": "1747741707754",
+        "content": "2024, it decided to make a song and dance about it, creating frequent flyer “millionaires” in the process. For 27 years, the airline had been part of the Star Alliance, an umbrella collection of 25 global carriers including stalwarts of the sky like United, Singapore Airlines and Ethiopian.\r\n\r\n",
+        "author": "nugonatroshvili@gmail.com",
+        "replies": [
+          {
+            "content": "2024, it decided to make a song and dance about it, creating frequent flyer “millionaires” in the process. For 27 years, the airline had been part of the Star Alliance, an umbrella collection of 25 global carriers including stalwarts of the sky like United, Singapore Airlines and Ethiopian.\r\n\r\n",
+            "author": "natroshvili@gmail.com",
+            "_id": {
+              "$oid": "682c7391aa4dfd761c97cef6"
+            },
+            "date": {
+              "$date": "2025-05-20T12:20:33.069Z"
+            }
+          }
+        ],
+        "likes": [
+          "nugonatroshvili@gmail.com",
+          "natroshvili@gmail.com",
+          "admin@admin.com",
+          "helloworld@gmail.com",
+          "melo@gmail.com"
+        ],
+        "_id": {
+          "$oid": "682c6c0b43719b010464af3d"
+        },
+        "date": {
+          "$date": "2025-05-20T11:48:27.759Z"
+        }
+      },
+      {
+        "id": "1747848968821",
+        "content": "HELLO WORLD!\r\n",
+        "author": "helloworld@gmail.com",
+        "replies": [
+          {
+            "content": "HELLO helloworld!\r\n",
+            "author": "helloworld@gmail.com",
+            "date": {
+              "$date": "2025-05-21T17:36:29.063Z"
+            },
+            "likes": [],
+            "_id": {
+              "$oid": "682e0f1d35a74b2ca4ce526a"
+            }
+          },
+          {
+            "content": "gurt: yo",
+            "author": "helloworld@gmail.com",
+            "date": {
+              "$date": "2025-05-21T17:36:44.395Z"
+            },
+            "likes": [],
+            "_id": {
+              "$oid": "682e0f2c35a74b2ca4ce52ce"
+            }
+          }
+        ],
+        "likes": [
+          "melo@gmail.com"
+        ],
+        "_id": {
+          "$oid": "682e0f0835a74b2ca4ce51d2"
+        },
+        "date": {
+          "$date": "2025-05-21T17:36:08.845Z"
+        }
+      },
+      {
+        "id": "1747934771313",
+        "content": "ვაგრძელებთ მოთმინებით ყურებას, თუ როგორ ხელმძღვანელობს ჩიომა ნნადი British Vogue-ის სარედა\r\n\r\n",
+        "author": "nugonatroshvili@gmail.com",
+        "replies": [],
+        "likes": [
+          "nugonatroshvili@gmail.com"
+        ],
+        "_id": {
+          "$oid": "682f5e33abcb28e8934ffcbe"
+        },
+        "date": {
+          "$date": "2025-05-22T17:26:11.320Z"
+        }
+      }
+    ]
   }
 ]

@@ -162,6 +162,23 @@ body.dark-mode .title {
     gap: 32px;
 }
 
+.arrow-dark {
+    display: none;
+}
+
+.arrow-light {
+    display: inline;
+}
+
+body.dark-mode .arrow-dark {
+    display: inline;
+}
+
+body.dark-mode .arrow-light {
+    display: none;
+}
+
+
 @media (max-width: 1440px) {
     .secondary-card {
         width: 100%;

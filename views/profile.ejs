@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Blog | Profile</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sen:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="/images/blog-icon.svg" type="image/x-icon">
+</head>
+<body>
+<%- include('partials/header', {email, user}) %>
+
+<div class="profile-container">
+    <h2>My Profile</h2>
+
+    <% if (error) { %>
+        <div class="error-message"><%= error %></div>
+    <% } %>
+    <% if (success) { %>
+        <div class="success-message"><%= success %></div>
+    <% } %>
+
+    <div class="profile-info">
+        <div class="profile-info-item">
+            <label>Email:</label>
+            <input type="email" value="<%= email %>" readonly>
+        </div>
+    </div>
+
+    <div class="profile-photo-section">
+        <h3>Profile Picture</h3>
+        <% if (photo) { %>
+            <img class="profile-photo" src="/uploads/<%= photo %>" alt="profile picture">
+        <% } else { %>
+            <p class="no-photo">Picture is not uploaded</p>
+        <% } %>
+
+        <form action="/profile/upload-photo" method="POST" enctype="multipart/form-data" class="upload-form">
+            <div class="custom-file-upload">
+                <input type="file" id="photo" name="photo" class="hidden-file">
+                <label for="photo" class="choose-file-btn">Choose File</label>
+                <span id="file-chosen">No file chosen</span>
+            </div>
+            <button type="submit">Upload Picture</button>
+        </form>
+    </div>
+
+    <div class="password-section">
+        <h3>Change Password</h3>
+        <form action="/profile/change-password" method="POST" class="password-form">
+            <input type="password" name="currentPassword" placeholder="Current Password" required>
+            <input type="password" name="newPassword" placeholder="New Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm New Password" required>
+            <button type="submit">Change Password</button>
+        </form>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const fileInput = document.getElementById('photo');
+        const fileChosen = document.getElementById('file-chosen');
+
+        if (fileInput) {
+            fileInput.addEventListener('change', function () {
+                fileChosen.textContent = this.files[0] ? this.files[0].name : 'No file chosen';
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blog | Forgot Password</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/auth.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/images/blog-icon.svg" type="image/x-icon">
+</head>
+<body>
+
+<%- include('partials/header', { email: null, user: null }) %>
+
+<div class="form-container container">
+    <h1 class="title container">RESET</h1>
+
+    <% if (error) { %>
+        <p class="error"><%= error %></p>
+    <% } %>
+    <% if (success) { %>
+        <p class="success-message"><%= success %></p>
+    <% } %>
+
+    <form action="/forgot" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Send New Password</button>
+    </form>
+
+    <a class="sign-up-btn" href="/login">Back to login</a>
+</div>
+
+<%- include("partials/footer") %>
+
+</body>
+</html>

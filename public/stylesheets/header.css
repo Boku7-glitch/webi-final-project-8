@@ -9,6 +9,35 @@ body.dark-mode {
     color: #f1f1f1;
 }
 
+.username {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-photo {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #6941C6;
+}
+
+.guest-photo {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,

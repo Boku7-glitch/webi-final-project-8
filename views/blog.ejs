@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="./images/blog-icon.svg" type="image/x-icon">
 </head>
 <body>
-<%- include('partials/header', {email: email}); %>
+<%- include('partials/header'); %>
 
 <div class="container blog-wrapper">
     <div class="recent-blogs">
@@ -38,10 +38,12 @@
                     <a class="recent-blog-title-wrapper" href="/blogs/<%= blog.id %>">
                         <h3 class=""><%= blog.title.slice(0, 20) %> </h3>
 
-                        <img src="/images/arrow-up-right-light.svg" alt="arrow-up-right-light">
+                        <figure class="arrow-icon-wrapper">
+                            <img src="/images/arrow-up-right.svg" alt="arrow-up-right" class="arrow-light">
+                            <img src="/images/arrow-up-right-light.svg" alt="arrow-up-right-light" class="arrow-dark">
+                        </figure>
                     </a>
                     <p class="description"><%= blog.description.slice(0, 90) %> </p>
-                    <p class="recent-blog-date"><%= blog.formatedDate %></p>
                 </div>
             <% }) %>
         </div>
@@ -129,6 +131,24 @@
                 </div>
             <% }) %>
         </section>
+        <div class="newsletter-wrapper">
+            <div class="separator"></div>
+            <p class="subtitle">Newletters</p>
+            <h3 class="news-title">Stories and interviews</h3>
+            <p class="news-description">Subscribe to learn about new product features, the latest in technology, solutions, and
+                updates.</p>
+            <div class="newsletter-form-wrapper">
+                <form class="newsletter-form" action="/newsletter" method="post">
+                    <input name=email class="email-input" placeholder="Enter your email" type="email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </form>
+                <div class="privacy-policy-wrapper">
+            <span class="privacy-policy">
+            We care about your data in our <span class="underline">privacy policy</span>
+        </span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

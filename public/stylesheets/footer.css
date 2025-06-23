@@ -80,12 +80,3 @@ body.dark-mode .footer-content a {
 body.dark-mode .footer-content a:hover {
     color: #91cfff;
 }
-
-/*@media (max-width: 768px) {*/
-/*    .footer-content {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/

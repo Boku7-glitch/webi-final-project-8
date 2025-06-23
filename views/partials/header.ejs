@@ -1,11 +1,24 @@
 <header class="container">
     <div class="username">
-        <a href="/">
-            <p>
-                <%= email ? email.split('@')[0] : null %>
-            </p>
-        </a>
+        <% if (typeof user !== 'undefined' && user) { %>
+            <div class="user-info">
+                <% if (user.photo) { %>
+                    <img src="/uploads/<%= user.photo %>?v=<%= Date.now() %>" alt="User Photo" class="user-photo">
+                <% } else { %>
+                    <img src="/images/default-profile.png" alt="Default User Photo" class="user-photo">
+                <% } %>
+                <a href="/">
+                    <p><%= user.email.split('@')[0] %></p>
+                </a>
+            </div>
+        <% } else { %>
+            <img class="guest-photo"
+                 src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+                 alt="guest-image">
+            <p>Guest</p>
+        <% } %>
     </div>
+
 
     <div class="nav-wrapper">
         <nav class="main-nav">
@@ -15,6 +28,7 @@
                 <li><a class="nav-link" href="/newsletter">Newsletter</a></li>
                 <% if (email) { %>
                     <li><a class="nav-link" href="/blogs/new">Create New Blog</a></li>
+                    <li><a class="nav-link" href="/profile">Profile</a></li>
                     <li><a style="color: #6e0000" class="nav-link" href="/logout">Logout</a></li>
                 <% } %>
                 <li>
@@ -70,12 +84,10 @@
         mobileMenu.classList.remove('show');
     });
 
-    // Load saved theme
     const isDark = localStorage.getItem('theme') === 'dark';
     if (isDark) document.body.classList.add('dark-mode');
     setThemeIcon(isDark);
 
-    // Add event listeners
     if (toggleBtnDesktop) toggleBtnDesktop.addEventListener('click', toggleDarkMode);
     if (toggleBtnMobile) toggleBtnMobile.addEventListener('click', toggleDarkMode);
 </script>

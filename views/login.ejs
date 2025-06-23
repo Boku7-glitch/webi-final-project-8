@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<%- include('partials/header', {email: null}); %>
+<%- include('partials/header', {email: null, user: null}); %>
 
 <div class="form-container container">
     <h1 class="title container">SIGN IN</h1>
@@ -27,6 +27,7 @@
     <form action="/login" method="POST">
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
+        <a class="forgot" href="/forgot">Forgot password?</a>
         <button type="submit">Sign In</button>
     </form>
 

@@ -1,12 +1,15 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
 
 const connectDatabase = () => {
-    mongoose.connect('mongodb+srv://test:test@cluster0.ndq7krf.mongodb.net/main?retryWrites=true&w=majority&appName=Cluster0', {
+    mongoose.connect('mongodb+srv://saba:broski@blogcluster.xxvnu3e.mongodb.net/?retryWrites=true&w=majority&appName=blogCluster', {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
+        useUnifiedTopology: true
     })
-        .then(() => console.log('MongoDB connected'))
-        .catch(err => console.error('MongoDB connection error:', err));
-}
+        .then(() => console.log('✅ MongoDB connected ✅'))
+        .catch((err) => console.error('❌ MongoDB connection error ❌:', err));
+};
 
-module.exports = {connectDatabase};
+// username: saba; password: broski
+
+module.exports = {connectDatabase}

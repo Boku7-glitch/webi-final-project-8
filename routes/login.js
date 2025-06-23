@@ -18,7 +18,10 @@ router.post('/', async function (req, res, next) {
         if (!user || !bcrypt.compareSync(password, user.password)) {
             return res.render('login', {error: 'Invalid email or password'});
         }
-        req.session.user = {email: user.email}
+        req.session.user = {
+            _id: user._id,
+            email: user.email
+        };
         res.redirect(`/blogs`);
     } catch (err) {
         console.log(err);

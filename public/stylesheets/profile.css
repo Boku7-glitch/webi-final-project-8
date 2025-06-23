@@ -1,0 +1,241 @@
+.profile-container {
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #121212;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .profile-container {
+    background-color: #1e1e1e;
+    border: 2px solid #f9f9f9;
+    color: #f1f1f1;
+    box-shadow: 0 6px 20px rgba(255,255,255,0.05);
+}
+
+.profile-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #1A1A1A;
+}
+
+.message {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.message.success {
+    background-color: #e6f9f0;
+    border: 1px solid #28a745;
+    color: #218838;
+}
+
+.message.error {
+    background-color: #ffe6e6;
+    border: 1px solid #dc3545;
+    color: #c82333;
+}
+
+body.dark-mode .profile-container h2 {
+    color: #ffffff;
+}
+
+.profile-info,
+.profile-photo-section,
+.password-section {
+    margin-bottom: 40px;
+}
+
+body.dark-mode .message {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .message.success {
+    background-color: #e6f9f0;
+    border: 1px solid #28a745;
+    color: #218838;
+}
+
+body.dark-mode .message.error {
+    background-color: #ffe6e6;
+    border: 1px solid #dc3545;
+    color: #c82333;
+}
+
+.profile-info-item {
+    margin-bottom: 20px;
+}
+
+.profile-info-item label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+body.dark-mode .profile-info-item label {
+    color: #ccc;
+}
+
+.profile-info-item input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .profile-info-item input {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+.profile-photo-section h3,
+.password-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.profile-photo-section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.no-photo {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.custom-file-upload label {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;;
+}
+
+.custom-file-upload label:hover {
+    transform: scale(1.03);
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload #file-chosen {
+    font-size: 14px;
+    color: #555;
+}
+
+body.dark-mode .custom-file-upload label {
+    background-color: #fff;
+    color: #1e1e1e;
+}
+
+body.dark-mode .custom-file-upload #file-chosen {
+    color: #ccc;
+}
+
+.profile-photo-section input[type="file"],
+.password-section input {
+    display: block;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body.dark-mode .profile-photo-section input[type="file"],
+body.dark-mode .password-section input {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.profile-photo-section button,
+.password-section button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background-color: #6941C6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-photo-section button:hover,
+.password-section button:hover {
+    background-color: #5026a7;
+    transform: scale(1.03);
+}
+
+body.dark-mode .profile-photo-section button,
+body.dark-mode .password-section button {
+    background-color: #9c7fff;
+    color: #121212;
+}
+
+.choose-file-btn {
+    cursor: pointer;
+}
+
+.hidden-file {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-photo-section img {
+        width: 120px;
+        height: 120px;
+    }
+}
