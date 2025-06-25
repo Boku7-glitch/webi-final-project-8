@@ -32,7 +32,9 @@
                     <li><a style="color: #6e0000" class="nav-link" href="/logout">Logout</a></li>
                 <% } %>
                 <li>
-                    <button id="toggle-dark-mode-desktop" class="dark-mode-toggle">🌙</button>
+                    <button id="toggle-dark-mode-desktop" class="dark-mode-toggle">
+                        ☾⋆
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -50,7 +52,9 @@
         <a class="nav-link" href="/">About</a>
         <a class="nav-link" href="/">Newsletter</a>
 
-        <button id="toggle-dark-mode-mobile" class="dark-mode-toggle">🌙</button>
+        <button id="toggle-dark-mode-mobile" class="dark-mode-toggle">
+            ☾⋆
+        </button>
 
         <figure class="close-btn-wrapper" id="close-btn-wrapper">
             <img src="/images/close-icon.svg" alt="Close menu">
@@ -66,8 +70,11 @@
     const toggleBtnMobile = document.getElementById('toggle-dark-mode-mobile');
 
     const setThemeIcon = (isDark) => {
-        if (toggleBtnDesktop) toggleBtnDesktop.textContent = isDark ? '☀️' : '🌙';
-        if (toggleBtnMobile) toggleBtnMobile.textContent = isDark ? '☀️' : '🌙';
+        const sunIcon = '☀︎';
+        const moonIcon = '☾⋆';
+
+        if (toggleBtnDesktop) toggleBtnDesktop.textContent = isDark ? sunIcon : moonIcon;
+        if (toggleBtnMobile) toggleBtnMobile.textContent = isDark ? sunIcon : moonIcon;
     };
 
     const toggleDarkMode = () => {
